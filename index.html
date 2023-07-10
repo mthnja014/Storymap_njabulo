@@ -72,4 +72,12 @@ style: `https://api.maptiler.com/maps/streets-v2/style.json?key=${key}`
 L.Projection.Mercator;
 
 L.control.scale({maxWidth: 100, metric: true, imperial: true}).setPosition('bottomright').addTo(map);
+
+  L.geoJSON(schools, {
+    style: function (feature) {
+        return {color: feature.properties.color};
+    }
+}).bindPopup(function (layer) {
+    return layer.feature.properties.description;
+}).addTo(map);
 </script>
