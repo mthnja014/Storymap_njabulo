@@ -1,9 +1,1 @@
-{
-  "type": "Feature",
-  "geometry": {
-    "type": "Point",
-    "coordinates": [-30, 25]
-  },
-  "properties": {
-    "name": "Dinagat Islands"
-  }
+{"type":"FeatureCollection","features":[{"type":"Feature","id":1,"geometry":{"type":"Point","coordinates":[30.914447913625775,-29.687931782997548]},"properties":{"OBJECTID":1}},{"type":"Feature","id":2,"geometry":{"type":"Point","coordinates":[30.910688771385576,-29.683888653475609]},"properties":{"OBJECTID":2}},{"type":"Feature","id":3,"geometry":{"type":"Point","coordinates":[30.908598777994985,-29.676084627972504]},"properties":{"OBJECTID":3}},{"type":"Feature","id":4,"geometry":{"type":"Point","coordinates":[30.907803698899972,-29.669833513524129]},"properties":{"OBJECTID":4}},{"type":"Feature","id":5,"geometry":{"type":"Point","coordinates":[30.907032949776067,-29.664947974303875]},"properties":{"OBJECTID":5}},{"type":"Feature","id":6,"geometry":{"type":"Point","coordinates":[30.934353746685289,-29.696826823913863]},"properties":{"OBJECTID":6}},{"type":"Feature","id":7,"geometry":{"type":"Point","coordinates":[30.935004958790923,-29.697820972969019]},"properties":{"OBJECTID":7}},{"type":"Feature","id":8,"geometry":{"type":"Point","coordinates":[30.936675151482934,-29.700059039977116]},"properties":{"OBJECTID":8}}]}
