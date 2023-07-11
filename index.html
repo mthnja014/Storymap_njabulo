@@ -162,9 +162,9 @@ L.geoJSON(parking).addTo(map);
 
   var roads = L.layerGroup([access_road, main_road, local_road]);
 
-  var overlays_ = {"roads": roads, "access roads": access_road_};
+  var overlays_ = {"roads": roads};
 
-  var roads_ = {"all roads": roads, "access roads": access_road_, "local roads" : local_road_, "main roads" : main_road_};
+  var roads_ = {"all roads": roads, "access roads": access_road_, "local roads" : local_road_, "main roads" : main_road_, "clinic" : clinic_};
 
   var layerControl = L.control.layers(overlays_, roads_).addTo(map);
 
