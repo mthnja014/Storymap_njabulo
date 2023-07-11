@@ -166,7 +166,7 @@ L.geoJSON(parking).addTo(map);
 
   var roads_ = {"all roads": roads, "access roads": access_road_, "local roads" : local_road_, "main roads" : main_road_};
 
-  var layerControl = L.control.layers(roads_, overlays_).addTo(map);
+  var layerControl = L.control.layers(overlays_, roads_).addTo(map);
 
 </script>
 </body>
