@@ -98,7 +98,7 @@ L.geoJSON(access_road, {
   style : access_road_style
 }).addTo(map);
 
-  var access_road_ = featureGroup([access_road]);
+  var access_road_ = L.featureGroup([access_road]);
 
 var banks = [{"type":"FeatureCollection","features":[{"type":"Feature","id":1,"geometry":{"type":"Point","coordinates":[30.935366886425633,-29.698155570537459]},"properties":{"OBJECTID":1,"Name":"Nedbank"}},{"type":"Feature","id":2,"geometry":{"type":"Point","coordinates":[30.93543244008519,-29.698083046075563]},"properties":{"OBJECTID":2,"Name":"Standard Bank"}},{"type":"Feature","id":3,"geometry":{"type":"Point","coordinates":[30.935472866069606,-29.698025103407936]},"properties":{"OBJECTID":3,"Name":"FNB"}},{"type":"Feature","id":4,"geometry":{"type":"Point","coordinates":[30.936964712634996,-29.699847123875241]},"properties":{"OBJECTID":4,"Name":"Capitec Bank"}},{"type":"Feature","id":5,"geometry":{"type":"Point","coordinates":[30.933717782583251,-29.695006847011438]},"properties":{"OBJECTID":5,"Name":"Standard Bank"}},{"type":"Feature","id":6,"geometry":{"type":"Point","coordinates":[30.91679704941625,-29.68885822357559]},"properties":{"OBJECTID":6,"Name":"Cash Express"}},{"type":"Feature","id":7,"geometry":{"type":"Point","coordinates":[30.904017292790865,-29.661128602806272]},"properties":{"OBJECTID":7,"Name":"Standard Bank"}},{"type":"Feature","id":8,"geometry":{"type":"Point","coordinates":[30.894040590669022,-29.650547969727725]},"properties":{"OBJECTID":8,"Name":"Standard Bank"}}]}];
   L.geoJSON(banks, {
