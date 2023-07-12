@@ -908,7 +908,7 @@ var local_road =  {"type":"FeatureCollection",
                                }]
                   }
         L.geoJSON(local_road, {
-          OnEachFeature: function(Feature, layer) {
+          OnEachFeature: function(feature, layer) {
             layer.bindPopup(feature.properties.Name);
           }
   style : local_road_style
