@@ -459,7 +459,7 @@ L.geoJSON(bus_stops).addTo(map);
                 }];
   L.geoJSON(clinic, {
   style : clinic_style
-});
+}).addTo(map);
 L.geoJSON(clinic, {
 onEachFeature: function(feature, layer) {
 layer.bindPopup(feature.properties.Name);
