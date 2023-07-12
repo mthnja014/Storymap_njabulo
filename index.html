@@ -289,7 +289,9 @@ hardware_style = {
                                   }]
                      }];
 L.geoJSON(access_road, {
-  style : access_road_style
+  style : function (access_road) {
+    return {access_road_style}
+  }
 }).addTo(map); 
 
 L.geoJSON(access_road, {
