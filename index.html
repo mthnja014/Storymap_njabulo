@@ -496,8 +496,8 @@ var library2 =
                                              [-29.6676346629680, 30.901908822851542],
                                              [-29.6676532402053, 30.901845053246152]
   ];
-          var libraryy = L.polygon(library2, {color: 'gray'}).addTo(map);
-  libraryy.bindPopup("OBJECTID:2 </br> Name : Umzinyathi Library <br> Shape Area : 476 </br> Type : Library");
+          var libraryy2 = L.polygon(library2, {color: 'gray'}).addTo(map);
+  libraryy2.bindPopup("OBJECTID:2 </br> Name : Umzinyathi Library <br> Shape Area : 476 </br> Type : Library");
 
 var local_road =  
   [
@@ -1072,7 +1072,7 @@ var main_road10 = [
     [-29.697153818945758, 30.93360424810775]
   ];
     var police_stationn2 = L.polygon(police_station2, {color: 'blue'}).addTo(map);
-  police_stationn.bindPopup("OBJECTID:2 </br> Name : Police Station <br> Shape Area : 775 </br> Type : Police Station");
+  police_stationn2.bindPopup("OBJECTID:2 </br> Name : Police Station <br> Shape Area : 775 </br> Type : Police Station");
 
 
   var school = [
@@ -1563,11 +1563,35 @@ var sport_field3 = [
   var cln = L.layerGroup([clinicc, clinicc2, clinicc3, clinicc4]);
   var grg = L.layerGroup([garagee]);
   var hardwr = L.layerGroup([hardwaree]);
+  var homafrs = L.layerGroup([home_affairss]);
+  var lbry = L.layerGroup([libraryy, libraryy2]);
+  var local = L.layerGroup([local_roadd, local_roadd2, local_roadd3, local_roadd4, local_roadd5, local_roadd6, local_roadd7, local_roadd8, local_roadd9]);
+  var main = L.layerGroup([main_roadd, main_roadd2, main_roadd3, main_roadd4, main_roadd5, main_roadd6, main_roadd7, main_roadd8, main_roadd9, main_roadd10]);
+  var police = L.layerGroup([police_stationn, police_stationn2]);
+  var schl = L.layerGroup([schooll, schooll2, schooll3, schooll4, schooll5, schooll6, schooll7, schooll8, schooll9, schooll10, schooll11, schooll12, schooll13, schooll14, schooll15, schooll16, 
+                           schooll17, schooll18, schooll19, schooll20, schooll21, schooll22, school23, schooll24, schooll25, schooll26, schooll27, schooll28, schooll29, schooll30, 
+                           schooll31, schooll32, schooll33, schooll34, schooll35]);
+  var sport = L.layerGroup([sport_fieldd, sport_fieldd2, sport_fieldd3]);
   
-  
-  var overlays = {"Topographic": topo, "Imagery": img};
+  var overlays = {
+    "Topographic": topo, 
+    "Imagery": img
+                 };
+  var lyrs = {
+    "Access Road" : acc,
+    "Clinic" : cln,
+    "Garage" : grg,
+    "Hardware" : hardwr,
+    "Home Affairs" : homafrs, 
+    "Library" : lbry,
+    "Local Road" : local,
+    "Main Road" : main,
+    "Police Station" : police,
+    "School" : schl,
+    "Sport Field" : sport
+  };
 
-  var layerControl = L.control.layers(overlays, roads_).addTo(map);
+  var layerControl = L.control.layers(overlays, lyrs).addTo(map);
 
 </script>
 </body>
