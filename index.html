@@ -71,91 +71,7 @@ L.control.scale({maxWidth: 100, metric: true, imperial: true}).setPosition('bott
 var imag = L.esri.basemapLayer("Imagery").addTo(map);
 var topo = L.esri.basemapLayer("Topographic").addTo(map);
 
-  // styles
-  
-  var main_road_style = {
-    "color": "rgb(255, 0, 0)",
-    "weight": 5,
-    "opacity": 0.65
-};
 
-    var access_road_style = {
-    "color": "rgb(0, 0, 255)",
-    "weight": 4,
-    "opacity": 0.65
-};
-
-      var local_road_style = {
-    "color": "rgb(0, 255, 0)",
-    "weight": 3,
-    "opacity": 0.65
-};
-
-        var clinic_style = {
-    "color": "rgb(255, 0, 0)",
-    "weight": 0,
-    "opacity": 0,
-    "fill": true,
-    "fillColor": "rgb(255, 0, 0)",
-    "fillOpacity": 1,
-    "stroke": false,
-    "lineCap": "round"
-};
-
-      var garage_style = {
-    "color": "rgb(255, 255, 0)",
-    "weight": 3,
-    "opacity": 1
-};
-
-hardware_style = {
-    "color": "rgb(0, 255, 255)",
-    "weight": 3,
-    "opacity": 1
-};
-
-  home_affairs_style = {
-    "color": "rgb(100, 255, 255)",
-    "weight": 3,
-    "opacity": 1
-};
-
-    library_style = {
-    "color": "rgb(100, 100, 255)",
-    "weight": 3,
-    "opacity": 1
-};
-
-      parking_style = {
-    "color": "rgb(0, 100, 255)",
-    "weight": 3,
-    "opacity": 1
-};
-
-        police_station_style = {
-    "color": "rgb(100, 255, 100)",
-    "weight": 3,
-    "opacity": 1
-};
-
-       school_style = {
-    "color": "rgb(100, 150, 100)",
-    "weight": 3,
-    "opacity": 1
-};
-
-       shopping_style = {
-    "color": "rgb(100, 150, 100)",
-    "weight": 3,
-    "opacity": 1
-};
-
-        sport_field_style = {
-    "color": "rgb(100, 150, 100)",
-    "weight": 3,
-    "opacity": 1
-};
-  
   var access_road = 
     [
                                                  [-29.67662446616641, 30.903785257952986],
@@ -1559,7 +1475,7 @@ var sport_field3 = [
         var sport_fieldd3 = L.polygon(sport_field3, {color: 'green'}).addTo(map);
   port_fieldd3.bindPopup("OBJECTID:3 </br> Name : Konkosi Sport Ground <br> Shape Area : 14670 </br> Type : School"); 
 
-  var acc = L.layerGroup([access_roadd, access_roadd2, access_roadd3, access_roadd4, access_roadd5, access_roadd6, access_roadd7, access_roadd8]); 
+ 
   var cln = L.layerGroup([clinicc, clinicc2, clinicc3, clinicc4]);
   var grg = L.layerGroup([garagee]);
   var hardwr = L.layerGroup([hardwaree]);
