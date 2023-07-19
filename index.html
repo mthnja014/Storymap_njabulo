@@ -412,10 +412,17 @@ var library2 =
           var libraryy2 = L.polygon(library2, {color: 'gray'}).addTo(map);
   libraryy2.bindPopup("OBJECTID:2 </br> Name : Umzinyathi Library <br> Shape Area : 476 </br> Type : Library");
 
-var local_road =  
+var local__road =  
   [
                                                            [-29.6747545740908, 30.9040511161579],
                                                            [-29.6748207238702, 30.9041653351496],
+    ];
+      var local_roadd = L.polyline(local_road, {color: 'orange'}).addTo(map);
+  local_roadd.bindPopup("OBJECTID:10 </br> Name : Mqoqi Avenue <br> Shape Length : 11 </br> Type : Local Road");
+  
+  var local_road =  
+    [
+                                                           [-29.67482782642440, 30.904184970525176]
                                                            [-29.6748278264244, 30.9041849705251],
                                                            [-29.6748401036954, 30.9042827233977],
                                                            [-29.6748729760226, 30.9045230604655],
@@ -442,7 +449,7 @@ var local_road =
 ];
   
       var local_roadd = L.polyline(local_road, {color: 'orange'}).addTo(map);
-  local_roadd.bindPopup("OBJECTID:1 </br> Name : Mqoqi Avenue <br> Shape Length : 552 </br> Type : Local Road");
+  local_roadd.bindPopup("OBJECTID:1 </br> Name : Mqoqi Avenue <br> Shape Length : 541 </br> Type : Local Road");
    
 var local_road2 =  
   [  
