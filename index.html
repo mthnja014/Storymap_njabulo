@@ -1465,12 +1465,14 @@ var sport_field3 = [
   var police = L.layerGroup([police_stationn, police_stationn2]);
 
   var sport = L.layerGroup([sport_fieldd, sport_fieldd2, sport_fieldd3]);
+  var at = L.layerGroup([atm1, atm2, atm3, atm4, atm5, atm6]);
   
   var overlays = {
     "Topographic": topo, 
     "Imagery": imag
                  }
   var lyrs = {
+    "ATM" : at,
     "Access Road" : acc,
     "Clinic" : cln,
     "Garage" : grg,
