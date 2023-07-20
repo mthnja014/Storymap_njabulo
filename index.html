@@ -63,6 +63,12 @@ const gl = L.maplibreGL({
 attribution: "\u003ca href=\"https://www.maptiler.com/copyright/\" target=\"_blank\"\u003e\u0026copy; MapTiler\u003c/a\u003e \u003ca href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\"\u003e\u0026copy; OpenStreetMap contributors\u003c/a\u003e",
 style: `https://api.maptiler.com/maps/streets-v2/style.json?key=${key}`
 }).addTo(map);
+
+  const atm = L.icon({
+  iconUrl: "atm.jfif",
+  iconSize: [18, 18]
+});
+  
 L.Projection.Mercator;
 L.control.scale({maxWidth: 100, metric: true, imperial: true}).setPosition('bottomright').addTo(map);
 
@@ -188,57 +194,26 @@ L.control.scale({maxWidth: 100, metric: true, imperial: true}).setPosition('bott
  var access_roadd8 = L.polyline(access_road7, {color: 'yellow'}).addTo(map);
   access_roadd8.bindPopup("OBJECTID:8 </br> Name : null <br> Shape Length :12 </br> Type : Access Road");
 
-var banks = [{"type":"FeatureCollection",
-              "features":[{"type":"Feature","id":1,
-                           "geometry":{"type":"Point",
-                                       "coordinates":[30.935366886425633,-29.698155570537459]},
-                           "properties":{"OBJECTID":1,
-                                         "Name":"Nedbank"}
-                          },
-                          {"type":"Feature","id":2,
-                           "geometry":{"type":"Point",
-                                       "coordinates":[30.93543244008519,-29.698083046075563]},
-                           "properties":{"OBJECTID":2,
-                                         "Name":"Standard Bank"}
-                          },
-                          {"type":"Feature","id":3,
-                             "geometry":{"type":"Point",
-                                         "coordinates":[30.935472866069606,-29.698025103407936]},
-                             "properties":{"OBJECTID":3,
-                                           "Name":"FNB"}
-                            },
-                          {"type":"Feature","id":4,
-                           "geometry":{"type":"Point",
-                                       "coordinates":[30.936964712634996,-29.699847123875241]},
-                           "properties":{"OBJECTID":4,
-                                         "Name":"Capitec Bank"}
-                          },
-                          {"type":"Feature","id":5,
-                           "geometry":{"type":"Point",
-                                       "coordinates":[30.933717782583251,-29.695006847011438]},
-                           "properties":{"OBJECTID":5,
-                                         "Name":"Standard Bank"}
-                          },
-                          {"type":"Feature","id":6,
-                           "geometry":{"type":"Point",
-                                       "coordinates":[30.91679704941625,-29.68885822357559]},
-                           "properties":{"OBJECTID":6,
-                                         "Name":"Cash Express"}
-                          },{"type":"Feature","id":7,
-                             "geometry":{"type":"Point",
-                                         "coordinates":[30.904017292790865,-29.661128602806272]},
-                             "properties":{"OBJECTID":7,
-                                           "Name":"Standard Bank"}
-                            },
-                          {"type":"Feature","id":8,
-                           "geometry":{"type":"Point",
-                                       "coordinates":[30.894040590669022,-29.650547969727725]},
-                           "properties":{"OBJECTID":8,
-                                         "Name":"Standard Bank"}
-                          }]
-             }];
-  L.geoJSON(banks).addTo(map);
-  var banks_ = L.layerGroup([banks]);
+var atm1 = L.marker([-29.698155570537459, 30.935366886425633], {icon: atm}).addTo(map);
+atm1.bindPopup("OBJECTID:1 </br> Name : Nedbank <br> Type : ATM");
+
+var atm2 = L.marker([-29.698083046075563, 30.93543244008519], {icon: atm}).addTo(map);
+atm2.bindPopup("OBJECTID:2 </br> Name : Standard Bank <br> Type : ATM");
+
+var atm3 = L.marker([-29.698025103407936, 30.935472866069606], {icon: atm}).addTo(map);
+atm3.bindPopup("OBJECTID:3 </br> Name : FNB <br> Type : ATM");
+
+var atm4 = L.marker([-29.699847123875241, 30.936964712634996], {icon: atm}).addTo(map);
+atm4.bindPopup("OBJECTID:4 </br> Name : Standard Bank <br> Type : ATM");
+  
+var atm5 = L.marker([-29.695006847011438, 30.933717782583251], {icon: atm}).addTo(map);
+atm5.bindPopup("OBJECTID:5 </br> Name : Standard Bank <br> Type : ATM");
+  
+var atm6 = L.marker([-29.68885822357559, 30.91679704941625], {icon: atm}).addTo(map);
+atm6.bindPopup("OBJECTID:6 </br> Name : Cash Express <br> Type : ATM");
+
+var atm7 = L.marker([-29.661128602806272, 30.904017292790865], {icon: atm}).addTo(map);
+atm7.bindPopup("OBJECTID:7 </br> Name : Standard Bank <br> Type : ATM");
 
   var clinic = 
     [
