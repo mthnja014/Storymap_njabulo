@@ -18,16 +18,8 @@
 <script src="leaflet-search.css"></script>
 <script src="https://unpkg.com/esri-leaflet@2.1.1/dist/esri-leaflet.js"></script>
 <script src="search.js"></script>
-<link rel="stylesheet" href="https://js.arcgis.com/4.19/esri/themes/light/main.css">
-<script src="https://js.arcgis.com/4.19/"></script>
 </head>
 <style type="text/css">
-      #viewDiv {
-      padding: 0;
-      margin: 0;
-      height: 100%;
-      width: 100%;
-    }
 #map {
 position: absolute; 
 top:0px;
@@ -67,26 +59,8 @@ margin: 0;
 </div>
 
 <script>
-    require([
-     "esri/config",
-      "esri/Map",
-      "esri/views/MapView"
-    ], function (esriConfig,Map, MapView) {
-
-      esriConfig.apiKey = "AAPK720f25e8b08045db8d81fd381e1cc8f9caarbF9vaN64ZHfsk47IjDQe1oCSFnbVyd92aGusGq-28VWj0H7JhLtYbGVzJcgH";
-      var map = new Map({
-        basemap: "arcgis-topographic" // Basemap layer
-      });
-
-      const view = new MapView({
-        map: map,
-        center: [-118.805, 34.027],
-        zoom: 13, // scale: 72223.819286
-        container: "viewDiv",
-        constraints: {
-          snapToZoom: false
-        }
-      });
+const key = 'i39Qg6QqR6C1s4K7BGko';
+var map = L.map('map').setView([-33.5, 20], 15);
 map.setMinZoom(15);
 map.setMaxBounds([[-29.65559985, 30.8804858], [-29.7178145, 30.9572894]]);
 const gl = L.maplibreGL({
