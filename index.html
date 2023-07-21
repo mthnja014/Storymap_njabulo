@@ -62,6 +62,26 @@ margin: 0;
 
 <script>
 const key = 'i39Qg6QqR6C1s4K7BGko';
+    require([
+     "esri/config",
+      "esri/Map",
+      "esri/views/MapView"
+    ], function (esriConfig,Map, MapView) {
+
+      esriConfig.apiKey = "<YOUR_API_KEY>";
+      const map = new Map({
+        basemap: "arcgis-topographic" // Basemap layer
+      });
+
+      const view = new MapView({
+        map: map,
+        center: [-118.805, 34.027],
+        zoom: 13, // scale: 72223.819286
+        container: "viewDiv",
+        constraints: {
+          snapToZoom: false
+        }
+      });
 var map = L.map('map').setView([-33.5, 22], 15);
 map.setMinZoom(15);
 map.setMaxBounds([[-29.65559985, 30.8804858], [-29.7178145, 30.9572894]]);
