@@ -1494,6 +1494,19 @@ var sport_field3 = [
 
   var layerControl = L.control.layers(overlays, lyrs).addTo(map);
 
+  var searchLayer = L.geoJSON(searchh, {
+    onEachFeature: function(feature, layer) {
+      layer.bindPopup(feature.properties.Name)
+    }
+  }).addTo(map);
+
+  var searchControl = new L.Control.Search ({
+    layer: searchLayer,
+    propertyName: 'Name'
+  }).addTo(map);
+
+  map.addControl(searchControl);
+
 </script>
 </body>
 </html>
