@@ -75,7 +75,7 @@ const key = 'i39Qg6QqR6C1s4K7BGko';
     ], function (esriConfig,Map, MapView) {
 
       esriConfig.apiKey = "AAPK720f25e8b08045db8d81fd381e1cc8f9caarbF9vaN64ZHfsk47IjDQe1oCSFnbVyd92aGusGq-28VWj0H7JhLtYbGVzJcgH";
-      const map = new Map({
+      var map = new Map({
         basemap: "arcgis-topographic" // Basemap layer
       });
 
@@ -88,7 +88,6 @@ const key = 'i39Qg6QqR6C1s4K7BGko';
           snapToZoom: false
         }
       });
-var map = L.map('map').setView([-33.5, 22], 15);
 map.setMinZoom(15);
 map.setMaxBounds([[-29.65559985, 30.8804858], [-29.7178145, 30.9572894]]);
 const gl = L.maplibreGL({
